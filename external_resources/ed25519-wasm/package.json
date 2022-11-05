@@ -1,0 +1,16 @@
+{
+  "name": "ed25519-wasm",
+  "collaborators": [
+    "18328594608 <1007697416@qq.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "ed25519-wasm_bg.wasm",
+    "ed25519-wasm.js",
+    "ed25519-wasm_bg.js",
+    "ed25519-wasm.d.ts"
+  ],
+  "module": "ed25519-wasm.js",
+  "types": "ed25519-wasm.d.ts",
+  "sideEffects": false
+}

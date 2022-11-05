@@ -1,0 +1,14 @@
+import { ContractContext as Relayer } from './types/Relayer';
+import { ContractContext as SimBridge } from './types/SimBridge';
+import { ContractContext as Deck } from './types/Deck';
+import { ContractContext as PrismBridge } from './types/PrismBridge';
+import { ContractContext as Bridge } from './types/Bridge';
+import { ContractContext as Erc20 } from './types/Erc20';
+import { ContractContext as Pool } from './types/Pool';
+export declare const erc20: (address: string, provider?: string) => Erc20;
+export declare const bridge: (address: string, provider?: string) => Bridge;
+export declare const simBridge: (address: string, provider?: string) => SimBridge;
+export declare const relayer: (address: string, provider?: string) => Relayer;
+export declare const deck: (address: string, provider?: string) => Deck;
+export declare const prismBridge: (address: string, provider?: string) => PrismBridge;
+export declare const pool: (address: string, provider?: string) => Pool;

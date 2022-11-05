@@ -1,0 +1,1 @@
+export declare const getWallet: (privateStr?: string) => Promise<FindoraWallet.IWalletWrap>;
