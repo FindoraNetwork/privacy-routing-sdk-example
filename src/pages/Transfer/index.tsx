@@ -1,13 +1,13 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useWeb3React } from '@web3-react/core';
 import { useImmer } from 'use-immer';
-import { Modal, notification } from 'antd';
+import { Modal, notification, Select } from 'antd';
 import cx from 'classnames';
 import Web3 from 'web3';
 
 import AppImage from '_containers/AppImage';
 import TransferModal from '_containers/TransferModal';
-import { DEFAULT_SEND_INFO, FINDORA_EVM_CHAIN_ID, FINDORA_NETWORK, ISendInfo } from '_src/config';
+import { DEFAULT_SEND_INFO, FINDORA_EVM_CHAIN_ID, FINDORA_NETWORK, ISendInfo, TOKENS } from '_src/config';
 
 import './index.less';
 
@@ -91,9 +91,15 @@ function Transfer() {
         </div> */}
         <div className="form-box__field">
           Amount:
-          <div>
+          <div style={{ display: 'flex', alignItems: 'center' }}>
             <AppImage imageUri={selectedToken?.imageUri} />
-            {[sendInfo.amount, selectedToken?.symbol].join(' ')}
+            {sendInfo.amount}
+            <Select
+              className="form-select"
+              defaultValue={sendInfo.tokenAddress}
+              onChange={(value) => setSendInfo(sendInfo => { sendInfo.tokenAddress = value })}
+              options={TOKENS}
+            />
           </div>
         </div>
         <div className="form-box__field" style={{ flexDirection: 'column', alignItems: 'flex-start' }}>

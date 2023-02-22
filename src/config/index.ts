@@ -34,3 +34,8 @@ export const DEFAULT_SEND_INFO: ISendInfo = {
   sourceAddress: '',
   destinationAddress: '',
 };
+
+export const TOKENS = [
+  { value: '', label: 'FRA' },
+  { value: '0x52Cbd68fd49240E1B869cAB8C918189C5F29862c', label: 'zkUSDT' },
+]
