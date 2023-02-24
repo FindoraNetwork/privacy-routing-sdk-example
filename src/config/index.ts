@@ -37,5 +37,5 @@ export const DEFAULT_SEND_INFO: ISendInfo = {
 
 export const TOKENS = [
   { value: '', label: 'FRA' },
-  { value: '0x52Cbd68fd49240E1B869cAB8C918189C5F29862c', label: 'zkUSDT' },
+  { value: '0x5b15Cdff7Fe65161C377eDeDc34A4E4E31ffb00B', label: 'zkUSDT' },
 ]
