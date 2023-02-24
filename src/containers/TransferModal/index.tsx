@@ -30,9 +30,9 @@ const TransferModal: React.FC<ITransferModalProps> = ({ sendInfo, onClose }) => 
       let depositTxnReceipt = null;
       if (sendInfo.tokenAddress) {
         // FRC20(Customized token) To Findora Native Chain
-        await evm.services.approveToken(sendInfo.tokenAddress, CONTRACTS_ADDRESS.simBridge, sendInfo.amount);
+        await evm.services.approveToken(sendInfo.tokenAddress, CONTRACTS_ADDRESS.prismBridgeLedger, sendInfo.amount);
         depositTxnReceipt = await evm.transfer.frc20ToBar({
-          bridgeAddress: CONTRACTS_ADDRESS.simBridge,
+          bridgeAddress: CONTRACTS_ADDRESS.prismBridge,
           recipientAddress: walletStart.address,
           tokenAddress: sendInfo.tokenAddress,
           tokenAmount: sendInfo.amount,
@@ -40,7 +40,7 @@ const TransferModal: React.FC<ITransferModalProps> = ({ sendInfo, onClose }) => 
       } else {
         // FRC20(FRA token) To Findora Native Chain
         depositTxnReceipt = await evm.transfer.fraToBar({
-          bridgeAddress: CONTRACTS_ADDRESS.simBridge,
+          bridgeAddress: CONTRACTS_ADDRESS.prismBridge,
           recipientAddress: walletStart.address,
           amount: sendInfo.amount,
         });

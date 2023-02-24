@@ -72,8 +72,8 @@ export const FINDORA_NETWORK = {
 };
 
 export const CONTRACTS_ADDRESS = {
-  simBridge: '0x893c29D3e6520466005C18683466136D73641201',
   prismBridge: '0x899d4d8f441E5B59EB21ceb58fce723bb5A85C55',
+  prismBridgeLedger: '0xBeeBd2B2E9C29E416bF5d774526644f7C854cE01'
 };
 
 export const DEFAULT_SEND_INFO = {

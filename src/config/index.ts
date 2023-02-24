@@ -22,8 +22,8 @@ export const FINDORA_NETWORK = {
 };
 
 export const CONTRACTS_ADDRESS = {
-  simBridge: '0x893c29D3e6520466005C18683466136D73641201',
   prismBridge: '0x899d4d8f441E5B59EB21ceb58fce723bb5A85C55',
+  prismBridgeLedger: '0xBeeBd2B2E9C29E416bF5d774526644f7C854cE01',
 };
 
 export const DEFAULT_SEND_INFO: ISendInfo = {
@@ -37,5 +37,5 @@ export const DEFAULT_SEND_INFO: ISendInfo = {
 
 export const TOKENS = [
   { value: '', label: 'FRA' },
-  { value: '0x52Cbd68fd49240E1B869cAB8C918189C5F29862c', label: 'zkUSDT' },
+  { value: '0x5b15Cdff7Fe65161C377eDeDc34A4E4E31ffb00B', label: 'zkUSDT' },
 ]

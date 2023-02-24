@@ -20,9 +20,9 @@ import { evm } from 'privacy-routing-sdk';
 // ...
 if (DEFAULT_SEND_INFO.tokenAddress) {
   // FRC20 (Customized token)
-  await evm.services.approveToken(DEFAULT_SEND_INFO.tokenAddress, CONTRACTS_ADDRESS.simBridge, DEFAULT_SEND_INFO.amount);
+  await evm.services.approveToken(DEFAULT_SEND_INFO.tokenAddress, CONTRACTS_ADDRESS.prismBridgeLedger, DEFAULT_SEND_INFO.amount);
   depositTxnReceipt = await evm.transfer.frc20ToBar({
-    bridgeAddress: CONTRACTS_ADDRESS.simBridge,
+    bridgeAddress: CONTRACTS_ADDRESS.prismBridge,
     recipientAddress: walletStart.address,
     tokenAddress: DEFAULT_SEND_INFO.tokenAddress,
     tokenAmount: DEFAULT_SEND_INFO.amount,
@@ -30,7 +30,7 @@ if (DEFAULT_SEND_INFO.tokenAddress) {
 } else {
   // FRC20 (FRA token)
   depositTxnReceipt = await evm.transfer.fraToBar({
-    bridgeAddress: CONTRACTS_ADDRESS.simBridge,
+    bridgeAddress: CONTRACTS_ADDRESS.prismBridge,
     recipientAddress: walletStart.address,
     amount: DEFAULT_SEND_INFO.amount,
   });
