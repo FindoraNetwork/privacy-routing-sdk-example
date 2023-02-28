@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useWeb3React } from '@web3-react/core';
 import { useImmer } from 'use-immer';
-import { Modal, notification, Select } from 'antd';
+import { Modal, notification, Select, InputNumber } from 'antd';
 import cx from 'classnames';
 import Web3 from 'web3';
 
@@ -93,7 +93,14 @@ function Transfer() {
           Amount:
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <AppImage imageUri={selectedToken?.imageUri} />
-            {sendInfo.amount}
+            <InputNumber
+                className="form-amt"
+                value={parseInt(sendInfo.amount, 10)}
+                min={1}
+                onChange={(value) => setSendInfo(sendInfo => {
+                  sendInfo.amount = value !== null ? value.toString() : "1"
+                })}
+            ></InputNumber>
             <Select
               className="form-select"
               defaultValue={sendInfo.tokenAddress}
