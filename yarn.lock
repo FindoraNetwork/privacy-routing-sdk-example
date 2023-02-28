@@ -4252,9 +4252,9 @@ core-js@2:
   integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
 
 core-js@^3.25.5:
-  version "3.28.0"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.28.0.tgz#ed8b9e99c273879fdfff0edfc77ee709a5800e4a"
-  integrity sha512-GiZn9D4Z/rSYvTeg1ljAIsEqFm0LaN9gVtwDCrKL80zHtS31p9BAjmTxVqTQDMpwlMolJZOFntUG2uwyj7DAqw==
+  version "3.29.0"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.29.0.tgz#0273e142b67761058bcde5615c503c7406b572d6"
+  integrity sha512-VG23vuEisJNkGl6XQmFJd3rEG/so/CNatqeE+7uZAwTSwFeB/qaO0be8xZYUNWprJ/GIwL8aMt9cj1kvbpTZhg==
 
 core-util-is@1.0.2:
   version "1.0.2"
@@ -9573,10 +9573,10 @@ pretty-time@^1.1.0:
   resolved "https://registry.yarnpkg.com/pretty-time/-/pretty-time-1.1.0.tgz#ffb7429afabb8535c346a34e41873adf3d74dd0e"
   integrity sha512-28iF6xPQrP8Oa6uxE6a1biz+lWeTOAPKggvjB8HAs6nVMKZwf5bG++632Dx614hIWgUPkgivRfG+a8uAXGTIbA==
 
-privacy-routing-sdk@^0.0.1-beta.1:
-  version "0.0.1-beta.1"
-  resolved "https://registry.yarnpkg.com/privacy-routing-sdk/-/privacy-routing-sdk-0.0.1-beta.1.tgz#e46165ad8cfc743ddd7406f769b00b94bd24e1fc"
-  integrity sha512-6C4Z5JUjhvmraJLcNTmc0Eur5yXdhTJUHnIMTLbTrl+y4lZFaTbICZTr9/dsT9kJfPSYmZZi/YoIEPYkCWpwMw==
+privacy-routing-sdk@^0.0.1-beta.3:
+  version "0.0.1-beta.3"
+  resolved "https://registry.yarnpkg.com/privacy-routing-sdk/-/privacy-routing-sdk-0.0.1-beta.3.tgz#2b0b9c7ba20f2f9977997ecee57e351cb1f80cd4"
+  integrity sha512-cuBtALGhxl0SiJZWo39XPzHHlQDOm4kOYLFHWCKn+NusH4WqVLvGpxvgIdZnMwAuoxV5kyjIAhcwmQeGBb/8IA==
   dependencies:
     amfe-flexible "^2.2.1"
     axios "^0.21.1"
