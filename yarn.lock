@@ -9573,10 +9573,10 @@ pretty-time@^1.1.0:
   resolved "https://registry.yarnpkg.com/pretty-time/-/pretty-time-1.1.0.tgz#ffb7429afabb8535c346a34e41873adf3d74dd0e"
   integrity sha512-28iF6xPQrP8Oa6uxE6a1biz+lWeTOAPKggvjB8HAs6nVMKZwf5bG++632Dx614hIWgUPkgivRfG+a8uAXGTIbA==
 
-privacy-routing-sdk@^0.0.1-beta.1:
-  version "0.0.1-beta.1"
-  resolved "https://registry.yarnpkg.com/privacy-routing-sdk/-/privacy-routing-sdk-0.0.1-beta.1.tgz#e46165ad8cfc743ddd7406f769b00b94bd24e1fc"
-  integrity sha512-6C4Z5JUjhvmraJLcNTmc0Eur5yXdhTJUHnIMTLbTrl+y4lZFaTbICZTr9/dsT9kJfPSYmZZi/YoIEPYkCWpwMw==
+privacy-routing-sdk@^0.0.1-beta.2:
+  version "0.0.1-beta.2"
+  resolved "https://registry.yarnpkg.com/privacy-routing-sdk/-/privacy-routing-sdk-0.0.1-beta.2.tgz#8f9281090debfad142a3b0160054694ad7ef3072"
+  integrity sha512-zK87hw0s564nD66ftcjUVjhHB1WU0w0IUWZlehjaFxZRSfp+H5JYkNjQYDqXpA8ejsdzbqVhIlxg2SAYFLmNSA==
   dependencies:
     amfe-flexible "^2.2.1"
     axios "^0.21.1"
